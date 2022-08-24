@@ -15,13 +15,18 @@ function calcArea(base, altura) {
 }
 
 // Desafio 3
-function splitSentence() {
+function splitSentence(frase) {
   // seu código aqui
+
 }
 
 // Desafio 4
-function concatName() {
+function concatName(conjuntoStrings) {
   // seu código aqui
+  let primeiro = conjuntoStrings [0]; 
+  let ultimo = conjuntoStrings [conjuntoStrings.length -1] 
+  let juncao = ultimo + ", " + primeiro 
+    return juncao
 }
 
 // Desafio 5
