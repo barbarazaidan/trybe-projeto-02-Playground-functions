@@ -30,8 +30,10 @@ function concatName(conjuntoStrings) {
 }
 
 // Desafio 5
-function footballPoints() {
+function footballPoints(win, ties) {
   // seu código aqui
+  let pontuacao = (win *3) + ties
+  return pontuacao
 }
 
 // Desafio 6
