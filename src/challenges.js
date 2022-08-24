@@ -53,9 +53,18 @@ function highestCount(conjuntoValores) {
 }
 
 // Desafio 7
-function catAndMouse() {
+function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
-}
+  let resultadoCat1 = mouse - cat1;
+  let resultadoCat2 = mouse - cat2;
+  if (Math.abs (resultadoCat1) < Math.abs (resultadoCat2)) {
+    return "cat1";
+  } else if (Math.abs (resultadoCat2) < Math.abs (resultadoCat1)) {
+    return "cat2";
+  } else {
+    return "os gatos trombam e o rato foge"
+    }
+  }
 
 // Desafio 8
 function fizzBuzz() {
