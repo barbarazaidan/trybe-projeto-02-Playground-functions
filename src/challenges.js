@@ -45,7 +45,6 @@ function highestCount(conjuntoValores) {
     if (maiorNumero < conjuntoValores [index]) {
       maiorNumero = conjuntoValores [index];
     }
-    console.log (maiorNumero)
   for (let index2 = 0; index2 < conjuntoValores.length; index2 += 1)  
     if (maiorNumero === conjuntoValores [index2]) {
       quantidadeMaiorNumero += 1;
