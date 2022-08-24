@@ -10,7 +10,7 @@ function compareTrue(valor1, valor2) {
 // Desafio 2
 function calcArea(base, altura) {
   // seu código aqui
-  let area = (base * altura) / 2
+  let area = (base * altura) / 2;
   return area 
 }
 
@@ -24,21 +24,33 @@ function splitSentence(frase) {
 function concatName(conjuntoStrings) {
   // seu código aqui
   let primeiro = conjuntoStrings [0]; 
-  let ultimo = conjuntoStrings [conjuntoStrings.length -1] 
-  let juncao = ultimo + ", " + primeiro 
+  let ultimo = conjuntoStrings [conjuntoStrings.length -1]; 
+  let juncao = ultimo + ", " + primeiro; 
     return juncao
 }
 
 // Desafio 5
 function footballPoints(win, ties) {
   // seu código aqui
-  let pontuacao = (win *3) + ties
+  let pontuacao = (win *3) + ties;
   return pontuacao
 }
 
 // Desafio 6
-function highestCount() {
+function highestCount(conjuntoValores) {
   // seu código aqui
+  let quantidadeMaiorNumero = 0;
+  let maiorNumero = conjuntoValores [0];
+  for (let index = 0; index < conjuntoValores.length; index += 1)
+    if (maiorNumero < conjuntoValores [index]) {
+      maiorNumero = conjuntoValores [index];
+    }
+    console.log (maiorNumero)
+  for (let index2 = 0; index2 < conjuntoValores.length; index2 += 1)  
+    if (maiorNumero === conjuntoValores [index2]) {
+      quantidadeMaiorNumero += 1;
+    }
+    return quantidadeMaiorNumero;
 }
 
 // Desafio 7
