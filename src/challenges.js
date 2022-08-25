@@ -17,7 +17,8 @@ function calcArea(base, altura) {
 // Desafio 3
 function splitSentence(frase) {
   // seu código aqui
-
+  let fraseQuebrada = frase.split (" ");
+  return fraseQuebrada;
 }
 
 // Desafio 4
@@ -72,12 +73,12 @@ function catAndMouse(mouse, cat1, cat2) {
 function fizzBuzz(conjuntoNumeros) {
   // seu código aqui
   let numeroString = [];
-  for (let index = 0; index < conjuntoNumeros.length; index += 1) {
-    if (conjuntoNumeros[index] % 3 === 0 && conjuntoNumeros[index] % 5 === 0) {
+  for (let index3 = 0; index3 < conjuntoNumeros.length; index3 += 1) {
+    if (conjuntoNumeros[index3] % 3 === 0 && conjuntoNumeros[index3] % 5 === 0) {
       numeroString.push ("fizzBuzz");
-    } else if (conjuntoNumeros[index] % 3 === 0 && conjuntoNumeros[index] % 5 !== 0) {
+    } else if (conjuntoNumeros[index3] % 3 === 0 && conjuntoNumeros[index3] % 5 !== 0) {
       numeroString.push ("fizz");
-    } else if (conjuntoNumeros[index] % 3 !== 0 && conjuntoNumeros[index] % 5 === 0) {
+    } else if (conjuntoNumeros[index3] % 3 !== 0 && conjuntoNumeros[index3] % 5 === 0) {
       numeroString.push ("buzz");
     } else {
       numeroString.push ("bug!");
@@ -87,10 +88,19 @@ function fizzBuzz(conjuntoNumeros) {
 }
 
 // Desafio 9
-function encode() {
+function encode(texto) {
   // seu código aqui
+  let mensagemCodificada;
+  for (let index4 = 0; index4 < texto.length; index4 += 1) {
+    switch (texto[index4].lower()) {
+      case "a":
+        mensagemCodificada = mensagemCodificada.concat (1);
+        break; 
+    }
 }
-function decode() {
+
+}
+function decode(codigo) {
   // seu código aqui
 }
 
