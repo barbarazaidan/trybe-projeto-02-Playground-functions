@@ -51,8 +51,8 @@ function highestCount(conjuntoValores) {
     if (maiorNumero === conjuntoValores [index2]) {
       quantidadeMaiorNumero += 1;
     }
-    return quantidadeMaiorNumero;
   } 
+  return quantidadeMaiorNumero;
 }
 
 // Desafio 7
