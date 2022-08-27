@@ -144,8 +144,34 @@ function decode(codigo) {
 }
 
 // Desafio 10
-function techList() {
+function techList(nomesTecnologia,pessoa) {
   // seu código aqui
+  let pessoaHabilidade = [];
+  let nomesTecnologiaOrdenado = [];
+  function ordenacao (tecnologia) {
+    for (let posterior = 1; posterior < tecnologia.length; posterior += 1) {
+        for (let anterior = 0; anterior < posterior; anterior += 1) {
+            if (tecnologia[posterior] < tecnologia[anterior]) {
+                let posicao = tecnologia[anterior];
+                tecnologia[anterior] = tecnologia [posterior];
+                tecnologia[posterior] = posicao;
+            }
+        }
+    }
+    return tecnologia;
+  }
+  if (nomesTecnologia.length === 0) {
+    return "Vazio!"
+  } else {
+      nomesTecnologiaOrdenado = ordenacao (nomesTecnologia);  
+      for (let contador = 0; contador < nomesTecnologiaOrdenado.length; contador += 1) {
+        pessoaHabilidade.push ({
+          tech: nomesTecnologiaOrdenado[contador],
+          name: pessoa
+        });
+      }
+    }   
+  return (pessoaHabilidade)
 }
 
 module.exports = {
