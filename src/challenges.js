@@ -3,15 +3,15 @@ function compareTrue(valor1, valor2) {
   // seu código aqui
   if (valor1 === true && valor2 === true) {
     return true;
- }
-    return false;
+  }
+  return false;
 }
 
 // Desafio 2
 function calcArea(base, altura) {
   // seu código aqui
   let area = (base * altura) / 2;
-	  return area;
+  return area;
 }
 
 // Desafio 3
@@ -92,22 +92,22 @@ function encode(texto) {
   for (let cont = 0; cont < texto.length; cont += 1) {
     switch (texto[cont]) {
     case 'a':
-      mensagemCodificada = mensagemCodificada + (texto[cont]).replace('a', '1');
+      mensagemCodificada += (texto[cont]).replace('a', '1');
       break;
     case 'e':
-      mensagemCodificada = mensagemCodificada + (texto[cont]).replace('e', '2');
+      mensagemCodificada += (texto[cont]).replace('e', '2');
       break;
     case 'i':
-      mensagemCodificada = mensagemCodificada + (texto[cont]).replace('i', '3');
+      mensagemCodificada += (texto[cont]).replace('i', '3');
       break;
     case 'o':
-      mensagemCodificada = mensagemCodificada + (texto[cont]).replace('o', '4');
+      mensagemCodificada += (texto[cont]).replace('o', '4');
       break;
     case 'u':
-      mensagemCodificada = mensagemCodificada + (texto[cont]).replace('u', '5');
+      mensagemCodificada += (texto[cont]).replace('u', '5');
       break;
     default:
-      mensagemCodificada = mensagemCodificada + texto[cont];   
+      mensagemCodificada += texto[cont];   
     }
   }
   return mensagemCodificada;
@@ -119,29 +119,29 @@ function decode(codigo) {
   for (let cont1 = 0; cont1 < codigo.length; cont1 += 1) {
     switch (codigo[cont1]) {
     case '1':
-      mensagemDecodificada = mensagemDecodificada + (codigo[cont1]).replace('1', 'a');
+      mensagemDecodificada += (codigo[cont1]).replace('1', 'a');
       break;
     case '2':
-      mensagemDecodificada = mensagemDecodificada + (codigo[cont1]).replace('2', 'e');
+      mensagemDecodificada += (codigo[cont1]).replace('2', 'e');
       break;
     case '3':
-      mensagemDecodificada = mensagemDecodificada + (codigo[cont1]).replace('3', 'i');
+      mensagemDecodificada += (codigo[cont1]).replace('3', 'i');
       break; 
     case '4':
-      mensagemDecodificada = mensagemDecodificada + (codigo[cont1]).replace('4', 'o');
+      mensagemDecodificada += (codigo[cont1]).replace('4', 'o');
       break;
     case '5':
-      mensagemDecodificada = mensagemDecodificada + (codigo[cont1]).replace('5', 'u');
+      mensagemDecodificada += (codigo[cont1]).replace('5', 'u');
       break;
     default:
-      mensagemDecodificada = mensagemDecodificada + codigo[cont1];   
+      mensagemDecodificada += codigo[cont1];   
       }
     }
   return mensagemDecodificada;
 }
 
 // Desafio 10
-function techList(nomesTecnologia,pessoa) {
+function techList(nomesTecnologia, pessoa) {
   // seu código aqui
   let pessoaHabilidade = [];
   let nomesTecnologiaOrdenado = [];
