@@ -11,7 +11,7 @@ function compareTrue(valor1, valor2) {
 function calcArea(base, altura) {
   // seu código aqui
   let area = (base * altura) / 2;
-    return area; 
+	  return area;
 }
 
 // Desafio 3
@@ -27,7 +27,7 @@ function concatName(conjuntoStrings) {
   let primeiro = conjuntoStrings[0];
   let ultimo = conjuntoStrings[conjuntoStrings.length - 1];
   let juncao = ultimo + ', ' + primeiro;
-    return juncao;
+  return juncao;
 }
 
 // Desafio 5
@@ -64,10 +64,8 @@ function catAndMouse(mouse, cat1, cat2) {
     return 'cat1';
   } else if (Math.abs(resultadoCat2) < Math.abs(resultadoCat1)) {
     return 'cat2';
-  } else {
-    return 'os gatos trombam e o rato foge';
+  } return 'os gatos trombam e o rato foge';
   }
-}
 
 // Desafio 8
 function fizzBuzz(conjuntoNumeros) {
@@ -85,7 +83,7 @@ function fizzBuzz(conjuntoNumeros) {
     }
 }
   return numeroString;
-}
+  }
 
 // Desafio 9
 function encode(texto) {
@@ -94,20 +92,20 @@ function encode(texto) {
   for (let cont = 0; cont < texto.length; cont += 1) {
     switch (texto[cont]) {
       case 'a':
-        mensagemCodificada = mensagemCodificada + (texto[cont]).replace('a', '1');
-        break;
+      mensagemCodificada = mensagemCodificada + (texto[cont]).replace('a', '1');
+				break;
       case 'e':
-        mensagemCodificada = mensagemCodificada + (texto[cont]).replace('e', '2');
-        break;
+      mensagemCodificada = mensagemCodificada + (texto[cont]).replace('e', '2');
+    break;
       case 'i':
-        mensagemCodificada = mensagemCodificada + (texto[cont]).replace('i', '3');
-        break;
+      mensagemCodificada = mensagemCodificada + (texto[cont]).replace('i', '3');
+    break;
       case 'o':
-        mensagemCodificada = mensagemCodificada + (texto[cont]).replace('o', '4');
-        break;
+      mensagemCodificada = mensagemCodificada + (texto[cont]).replace('o', '4');
+    break;
       case 'u':
-        mensagemCodificada = mensagemCodificada + (texto[cont]).replace('u', '5');
-        break;
+      mensagemCodificada = mensagemCodificada + (texto[cont]).replace('u', '5');
+    break;
     default:
         mensagemCodificada = mensagemCodificada + texto[cont];   
     }
@@ -123,19 +121,19 @@ function decode(codigo) {
     switch (codigo[cont1]) {
         case '1':
           mensagemDecodificada = mensagemDecodificada + (codigo[cont1]).replace('1', 'a');
-          break;
+    break;
         case '2':
           mensagemDecodificada = mensagemDecodificada + (codigo[cont1]).replace('2', 'e');
-          break;
+    break;
         case '3':
           mensagemDecodificada = mensagemDecodificada + (codigo[cont1]).replace('3', 'i');
-          break; 
+    break; 
         case '4':
           mensagemDecodificada = mensagemDecodificada + (codigo[cont1]).replace('4', 'o');
-          break;
+    break;
         case '5':
           mensagemDecodificada = mensagemDecodificada + (codigo[cont1]).replace('5', 'u');
-          break;
+    break;
       default:
           mensagemDecodificada = mensagemDecodificada + codigo[cont1];   
       }

@@ -8,38 +8,37 @@ function generatePhoneNumber(numeros) {
       return true;
     }
   }
-  function verificandoNumeros(array2) {  
+  function verificandoNumeros(array2) { 
     for (let contador = 0; contador < array2.length; contador += 1) {
       let numerosIguais = 1;
       if (array2[contador] < 0 || array2[contador] > 9) {
         return false;
-      } else if (array2[contador] >= 0 || array2[contador] < 9 ){
-          for (let contador2 = contador + 1; contador2 < array2.length; contador2 += 1) {
-            if (array2[contador] === array2[contador2]) {
-              numerosIguais += 1;
-            }
+      } else if (array2[contador] >= 0 || array2[contador] < 9) {
+        for (let contador2 = contador + 1; contador2 < array2.length; contador2 += 1) {
+          if (array2[contador] === array2[contador2]) {
+            numerosIguais += 1;
           }
-          if (numerosIguais >= 3) {
-            return false;
-          }
-        } else {
+        }
+         if (numerosIguais >= 3) {
+          return false;
+         }
+      } else {
             return true;
-          };
+          }
     }
   }
-let isTamanhoIncompatível;
-let isNumerosIncompativeis;
-let telefone = '(xx) xxxxx-xxxx';
-isTamanhoIncompatível = verificandoTamanho (numeros);
-isNumerosIncompativeis = verificandoNumeros (numeros);
-
+  let isTamanhoIncompatível;
+  let isNumerosIncompativeis;
+  let telefone = '(xx) xxxxx-xxxx';
+  isTamanhoIncompatível = verificandoTamanho(numeros);
+  isNumerosIncompativeis = verificandoNumeros(numeros);
 if (isTamanhoIncompatível === false) {
   return 'Array com tamanho incorreto.';
-} else if (isNumerosIncompativeis === false) {
+  } else if (isNumerosIncompativeis === false) {
     return 'não é possível gerar um número de telefone com esses valores';
-} else {
+  } else {
     for (let index = 0; index < numeros.length; index += 1) {
-      telefone = telefone.replace ('x', numeros [index]);
+      telefone = telefone.replace ('x', numeros[index]);
     }
     return telefone;
   }
@@ -55,11 +54,24 @@ function triangleCheck(lineA, lineB, lineC) {
  } else if (trianguloModulo === false) {
   return false;
  } return true; 
- }
+}
 
 // Desafio 13
-function hydrate() {
+function hydrate(stringBebidas) {
   // seu código aqui
+		let numeros;
+		let soma = 0;
+		let novoArray = [];
+		numeros = stringBebidas.match(/\d+/g);
+		for (let i = 0; i < numeros.length; i += 1) {
+			novoArray.push(parseInt(numeros[i]));
+		}
+		for (let indice = 0; indice < novoArray.length; indice += 1) {
+			soma += novoArray[indice];
+		}
+		if (soma > 1) {
+			return soma + ' copos de água';
+		} return soma + ' copo de água';
 }
 
 module.exports = {
