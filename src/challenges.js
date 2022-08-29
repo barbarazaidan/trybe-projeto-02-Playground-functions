@@ -3,8 +3,8 @@ function compareTrue(valor1, valor2) {
   // seu código aqui
   if (valor1 === true && valor2 === true) {
     return true;
-  }
-  return false;
+ }
+    return false;
 }
 
 // Desafio 2
@@ -65,7 +65,7 @@ function catAndMouse(mouse, cat1, cat2) {
   } else if (Math.abs(resultadoCat2) < Math.abs(resultadoCat1)) {
     return 'cat2';
   } return 'os gatos trombam e o rato foge';
-  }
+}
 
 // Desafio 8
 function fizzBuzz(conjuntoNumeros) {
@@ -81,9 +81,9 @@ function fizzBuzz(conjuntoNumeros) {
     } else {
       numeroString.push('bug!');
     }
-}
-  return numeroString;
   }
+  return numeroString;
+}
 
 // Desafio 9
 function encode(texto) {
@@ -91,54 +91,53 @@ function encode(texto) {
   let mensagemCodificada = '';
   for (let cont = 0; cont < texto.length; cont += 1) {
     switch (texto[cont]) {
-      case 'a':
+    case 'a':
       mensagemCodificada = mensagemCodificada + (texto[cont]).replace('a', '1');
-				break;
-      case 'e':
+      break;
+    case 'e':
       mensagemCodificada = mensagemCodificada + (texto[cont]).replace('e', '2');
-    break;
-      case 'i':
+      break;
+    case 'i':
       mensagemCodificada = mensagemCodificada + (texto[cont]).replace('i', '3');
-    break;
-      case 'o':
+      break;
+    case 'o':
       mensagemCodificada = mensagemCodificada + (texto[cont]).replace('o', '4');
-    break;
-      case 'u':
+      break;
+    case 'u':
       mensagemCodificada = mensagemCodificada + (texto[cont]).replace('u', '5');
-    break;
+      break;
     default:
-        mensagemCodificada = mensagemCodificada + texto[cont];   
+      mensagemCodificada = mensagemCodificada + texto[cont];   
     }
   }
   return mensagemCodificada;
 }
-
 
 function decode(codigo) {
   // seu código aqui
   let mensagemDecodificada = '';
   for (let cont1 = 0; cont1 < codigo.length; cont1 += 1) {
     switch (codigo[cont1]) {
-        case '1':
-          mensagemDecodificada = mensagemDecodificada + (codigo[cont1]).replace('1', 'a');
-    break;
-        case '2':
-          mensagemDecodificada = mensagemDecodificada + (codigo[cont1]).replace('2', 'e');
-    break;
-        case '3':
-          mensagemDecodificada = mensagemDecodificada + (codigo[cont1]).replace('3', 'i');
-    break; 
-        case '4':
-          mensagemDecodificada = mensagemDecodificada + (codigo[cont1]).replace('4', 'o');
-    break;
-        case '5':
-          mensagemDecodificada = mensagemDecodificada + (codigo[cont1]).replace('5', 'u');
-    break;
-      default:
-          mensagemDecodificada = mensagemDecodificada + codigo[cont1];   
+    case '1':
+      mensagemDecodificada = mensagemDecodificada + (codigo[cont1]).replace('1', 'a');
+      break;
+    case '2':
+      mensagemDecodificada = mensagemDecodificada + (codigo[cont1]).replace('2', 'e');
+      break;
+    case '3':
+      mensagemDecodificada = mensagemDecodificada + (codigo[cont1]).replace('3', 'i');
+      break; 
+    case '4':
+      mensagemDecodificada = mensagemDecodificada + (codigo[cont1]).replace('4', 'o');
+      break;
+    case '5':
+      mensagemDecodificada = mensagemDecodificada + (codigo[cont1]).replace('5', 'u');
+      break;
+    default:
+      mensagemDecodificada = mensagemDecodificada + codigo[cont1];   
       }
     }
-    return mensagemDecodificada;
+  return mensagemDecodificada;
 }
 
 // Desafio 10

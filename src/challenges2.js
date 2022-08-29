@@ -19,12 +19,12 @@ function generatePhoneNumber(numeros) {
             numerosIguais += 1;
           }
         }
-         if (numerosIguais >= 3) {
+        if (numerosIguais >= 3) {
           return false;
-         }
+        }
       } else {
-            return true;
-          }
+        return true;
+      }
     }
   }
   let isTamanhoIncompatível;
@@ -32,13 +32,13 @@ function generatePhoneNumber(numeros) {
   let telefone = '(xx) xxxxx-xxxx';
   isTamanhoIncompatível = verificandoTamanho(numeros);
   isNumerosIncompativeis = verificandoNumeros(numeros);
-if (isTamanhoIncompatível === false) {
-  return 'Array com tamanho incorreto.';
+  if (isTamanhoIncompatível === false) {
+    return 'Array com tamanho incorreto.';
   } else if (isNumerosIncompativeis === false) {
     return 'não é possível gerar um número de telefone com esses valores';
-  } else {
+  } {
     for (let index = 0; index < numeros.length; index += 1) {
-      telefone = telefone.replace ('x', numeros[index]);
+      telefone = telefone.replace('x', numeros[index]);
     }
     return telefone;
   }
@@ -47,24 +47,24 @@ if (isTamanhoIncompatível === false) {
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
   // seu código aqui
- let trianguloLados = (lineA < lineB + lineC && lineB < lineA + lineC && lineC < lineA + lineB);
- let trianguloModulo = (lineA > Math.abs(lineB - lineC) && lineB > Math.abs(lineA - lineC) && lineC > Math.abs(lineA - lineB));
- if (trianguloLados === false) {
-  return false;
- } else if (trianguloModulo === false) {
-  return false;
+  let trianguloLados = (lineA < lineB + lineC && lineB < lineA + lineC && lineC < lineA + lineB);
+  let trianguloModulo = (lineA > Math.abs(lineB - lineC) && lineB > Math.abs(lineA - lineC) && lineC > Math.abs(lineA - lineB));
+  if (trianguloLados === false) {
+    return false;
+  } else if (trianguloModulo === false) {
+    return false;
  } return true; 
 }
 
 // Desafio 13
 function hydrate(stringBebidas) {
   // seu código aqui
-		let numeros;
-		let soma = 0;
-		let novoArray = [];
-		numeros = stringBebidas.match(/\d+/g);
-		for (let i = 0; i < numeros.length; i += 1) {
-			novoArray.push(parseInt(numeros[i]));
+  let numeros;
+  let soma = 0;
+  let novoArray = [];
+  numeros = stringBebidas.match(/\d+/g);
+  for (let i = 0; i < numeros.length; i += 1) {
+   novoArray.push(parseInt(numeros[i]));
 		}
 		for (let indice = 0; indice < novoArray.length; indice += 1) {
 			soma += novoArray[indice];
