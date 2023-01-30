@@ -134,7 +134,7 @@ Requisitos Bônus
 <details><summary>Detalhes</summary>
 <p>
 
-> Implemente a função `hydrate` que recebe uma string e retorna a sugestão de quantos copos de água você deve beber."
+> Implemente a função `hydrate` que recebe uma string e retorna a sugestão de quantos copos de água você deve beber.
 
 </p>
 </details>
