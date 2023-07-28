@@ -17,6 +17,8 @@ Confira os requisitos cobrados pela Trybe (texto extraído do Read.Me oficial do
 </p>
 </details>
 
+---
+
 **2 - Crie uma função que calcula a área de um triângulo**
 
 <details><summary>Detalhes</summary>
@@ -26,6 +28,8 @@ Confira os requisitos cobrados pela Trybe (texto extraído do Read.Me oficial do
 
 </p>
 </details>
+
+---
 
 **3 - Crie uma função que divida uma frase**
 
@@ -37,6 +41,8 @@ Confira os requisitos cobrados pela Trybe (texto extraído do Read.Me oficial do
 </p>
 </details>
 
+---
+
 **4 - Crie uma função que use concatenação de strings**
 
 <details><summary>Detalhes</summary>
@@ -46,6 +52,8 @@ Confira os requisitos cobrados pela Trybe (texto extraído do Read.Me oficial do
 
 </p>
 </details>
+
+---
 
 **5 - Crie uma função que calcula a quantidade de pontos em um campeonato de futebol**
 
@@ -57,6 +65,8 @@ Confira os requisitos cobrados pela Trybe (texto extraído do Read.Me oficial do
 </p>
 </details>
 
+---
+
 **6 - Crie uma função que calcula o número de repetições do maior número**
 
 <details><summary>Detalhes</summary>
@@ -66,6 +76,8 @@ Confira os requisitos cobrados pela Trybe (texto extraído do Read.Me oficial do
 
 </p>
 </details>
+
+---
 
 **7 - Crie uma função de Caça ao Rato**
 
@@ -77,6 +89,8 @@ Confira os requisitos cobrados pela Trybe (texto extraído do Read.Me oficial do
 </p>
 </details>
 
+---
+
 **8 - Crie uma função FizzBuzz**
 
 <details><summary>Detalhes</summary>
@@ -86,6 +100,8 @@ Confira os requisitos cobrados pela Trybe (texto extraído do Read.Me oficial do
 
 </p>
 </details>
+
+---
 
 **9 - Crie uma função que Codifique e Decodifique**
 
@@ -97,6 +113,8 @@ Confira os requisitos cobrados pela Trybe (texto extraído do Read.Me oficial do
 </p>
 </details>
 
+---
+
 **10 - Crie uma função de Lista de Tecnologias**
 
 <details><summary>Detalhes</summary>
@@ -106,6 +124,8 @@ Confira os requisitos cobrados pela Trybe (texto extraído do Read.Me oficial do
 
 </p>
 </details>
+
+---
 
 Requisitos Bônus
 
@@ -119,6 +139,8 @@ Requisitos Bônus
 </p>
 </details>
 
+---
+
 **12 - Crie uma função que teste a condição de existência de um triângulo**
 
 <details><summary>Detalhes</summary>
@@ -129,6 +151,8 @@ Requisitos Bônus
 </p>
 </details>
 
+---
+
 **13 - Crie uma função de boas vindas ao Bar da Trybe!**
 
 <details><summary>Detalhes</summary>
@@ -138,6 +162,8 @@ Requisitos Bônus
 
 </p>
 </details>
+
+---
 
 #### Sobre o curso da Trybe
 O programa total de estudo conta com mais de 1.500 horas de aulas presenciais e online,divididas ao longo de 12 meses. O conteúdo aborda introdução ao desenvolvimento de software, front-end, back-end, ciência da computação, engenharia de software, metodologias ágeis e habilidades comportamentais.
